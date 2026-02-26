@@ -92,13 +92,19 @@ int main(int argc,char** argv)
     cout<<"of ::== " << std::setprecision(preci) << xxty << " " << std::setprecision(preci) << zzty <<"\n";
 
     long double xp;
+    long double fractpart,intpart;
     long double stbl=9;
     xp=(long double)xxty/(long double)stbl;
-    cout<<"with Divisibility of 9 " << std::setprecision(preci)<<xp <<"\n";
+    fractpart=modf(xp,&intpart);
+    if(fractpart==0){cout<<"is divisible\n";}
+    cout<<"with Divisibility of 9 " << std::setprecision(preci)<< " of  " << xxty << " is " << std::setprecision(preci)<< xp <<"\n";
+
 
     long double stbli=3;
     xp=(long double)xxty/(long double)stbli;
-    cout<<"with Divisibility of 3 " << std::setprecision(preci) <<xp <<"\n";
+    fractpart=modf(xp,&intpart);
+    if(fractpart==0){cout<<"is divisible\n";}
+    cout<<"with Divisibility of 3 " << std::setprecision(preci) <<" of  " << xxty << " is " << std::setprecision(preci)<<xp <<"\n";
 
     get_the_sum *gtsm=new get_the_sum();
     long double a;
@@ -121,5 +127,8 @@ int main(int argc,char** argv)
                       }
            }
     cout<<std::setprecision(preci) << a << " " <<std::setprecision(preci) << b <<"\n";
+
+
+
     return 0;
 }
