@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1751991639 source:/home/acherontas/codeblock/breaker_number_arm64/main.cpp
+	<iostream>
+	<iomanip>
+	<math.h>
+	"get_the_sum.h"
+
+1751991181 /home/acherontas/codeblock/breaker_number_arm64/get_the_sum.h
+	<string.h>
+	<iostream>
+
+1751991807 source:/home/acherontas/codeblock/breaker_number_arm64/get_the_sum.cpp
+	"get_the_sum.h"
+	<string.h>
+	<iostream>
+
+1758301417 source:/home/acherontas/GitHub_Projects/2785_x/get_the_sum.cpp
+	"get_the_sum.h"
+	<string.h>
+	<iostream>
+
+1758301417 /home/acherontas/GitHub_Projects/2785_x/get_the_sum.h
+	<string.h>
+	<iostream>
+
