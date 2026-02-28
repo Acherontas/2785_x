@@ -10,7 +10,7 @@ int main(int argc,char** argv)
 {
     cout<<"enter number and precision \n";
     long double nmb;
-    nmb=stoll(argv[1]);
+    nmb=stold(argv[1]);
     int preci=0;
     preci=stoi(argv[2]);
     string tmps;
@@ -90,6 +90,12 @@ int main(int argc,char** argv)
      xxty=xxty+xt[i];
     }
     cout<<"of ::== " << std::setprecision(preci) << xxty << " " << std::setprecision(preci) << zzty <<"\n";
+
+
+    long double xlr;
+    xlr=nmb-zzty;
+    cout<<"OF XLR " << std::setprecision(preci)<<xlr <<"\n";
+    xxty=xlr;
 
     long double xp;
     long double fractpart,intpart;
