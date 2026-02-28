@@ -12,6 +12,6 @@ for a specific purposes
 just like a hypothetical model system
 
 
-Updated to better handle large numbers 26 and up 
+Updated to better handle large numbers 26 and up in some cases
 
 contact me acherontia.myosotis@gmail.com
